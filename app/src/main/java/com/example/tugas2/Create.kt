@@ -1,7 +1,10 @@
 package com.example.tugas2
 
 import Database.GlobalVar
+import Model.Ayam
 import Model.Hewan
+import Model.Kambing
+import Model.Sapi
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioButton
@@ -48,7 +51,14 @@ class Create : AppCompatActivity() {
             var radioId = viewBind.radioGroup.checkedRadioButtonId
             var radioButton = findViewById<RadioButton>(radioId)
             var type = radioButton.text.toString()
-             hewan = Hewan(nama,type,usia)
+            if( type == "Ayam"){
+                hewan = Ayam(nama,type,usia)
+            }else if(type== "Sapi"){
+                hewan = Sapi(nama,type,usia)
+            }else if (type == "Kambing"){
+                hewan = Kambing(nama,type,usia)
+            }
+
             checker()
         }
 

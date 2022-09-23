@@ -3,7 +3,7 @@ package Model
 import android.os.Parcel
 import android.os.Parcelable
 
-class Hewan(
+open class Hewan(
     var nama:String?,
     var type:String?,
     var usia:String?,
@@ -37,5 +37,14 @@ class Hewan(
         override fun newArray(size: Int): Array<Hewan?>{
             return arrayOfNulls(size)
         }
+    }
+    open fun makesound():String{
+        return ""
+    }
+    open fun makefeed(type: String?):String{
+        return "Anda memberi makan dengan biji bijian"
+    }
+    open fun makefeed(type: Int):String{
+        return "Anda memberi makan dengan rumput"
     }
 }

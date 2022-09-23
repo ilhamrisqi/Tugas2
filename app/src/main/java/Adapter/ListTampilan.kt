@@ -58,7 +58,10 @@ class ListTampilan(val listHewan: ArrayList<Hewan>, val cardListener: CardListen
             }
 
             binding.SuaraButton.setOnClickListener(){
-                Toast.makeText(it.context,"POK",Toast.LENGTH_SHORT).show()
+                Toast.makeText(it.context,GlobalVar.listDataHewan.get(position).makesound(),Toast.LENGTH_SHORT).show()
+            }
+            binding.FoodButton.setOnClickListener(){
+                Toast.makeText(it.context,GlobalVar.listDataHewan.get(position).makefeed(GlobalVar.listDataHewan.get(position).type),Toast.LENGTH_SHORT).show()
             }
         }
 
