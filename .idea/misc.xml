@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_create.xml" value="0.27692718505859376" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_create.xml" value="0.7969161987304687" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.3495001530301744" />
-        <entry key="app/src/main/res/layout/cardanimal.xml" value="0.3709173893582994" />
+        <entry key="app/src/main/res/layout/cardanimal.xml" value="0.41876208897485495" />
       </map>
     </option>
   </component>

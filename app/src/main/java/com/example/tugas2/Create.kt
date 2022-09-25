@@ -7,6 +7,7 @@ import Model.Kambing
 import Model.Sapi
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.RadioButton
 import com.example.tugas2.databinding.ActivityCreateBinding
 import com.example.tugas2.databinding.ActivityMainBinding
